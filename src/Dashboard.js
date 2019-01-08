@@ -4,7 +4,6 @@ const Dashboard = (props) => {
   return (
     <div className="dashboard">
             <p>Tasks in progress: {props.todos.length}</p>
-            <p>Finished tasks: {props.todos.length}</p>
     </div>
   )
 }
