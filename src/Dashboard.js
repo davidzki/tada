@@ -3,7 +3,7 @@ import React from 'react'
 const Dashboard = (props) => {
   return (
     <div className="dashboard">
-            <p>Tasks in progress: {props.todos.length}</p>
+            <p>Tasks in progress: <span className="number">{props.todos.length}</span></p>
     </div>
   )
 }

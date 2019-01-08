@@ -1,5 +1,5 @@
 body {
-  background-color: #F4F4F9;
+  background-color: #F2EFE9;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
@@ -10,10 +10,23 @@ body {
 
 h1 {
   font-family: 'Paytone One', sans-serif;
+  color: #564E58;
+  letter-spacing: 2px;
+  font-size: 54px;
+  padding: 0;
+  margin: 0;
 }
 
+.number {
+  color: #252627;
+  font-size: 24px;
+  text-underline-position: auto;
+}
+
+
 .menubar {
-  width: 70%;
+  max-width: 750px;
+  width: 60%;
   text-align: left;
   margin: 0 auto;
   color: #333;
@@ -22,11 +35,12 @@ h1 {
 
 .fa-plus-circle {
   font-size: 42px;
-  color: #586F7C;
+  color: #904E55;
 }
 .fa-check-circle {
-  font-size: 18px;
+  font-size: 42px;
   color: #04724D;
+  margin-right: 20px;
 }
 
 button {
@@ -62,6 +76,7 @@ input:focus {
 }
 
 form {
+  max-width: 800px;
   width: 80%;
   margin: 0 auto;
   align-items: center;
@@ -80,22 +95,30 @@ label {
 
 }
 
+.todoRow {
+  align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 li {
-  margin-top: 10px !important;
-  margin: 0 auto;
+  margin: 20px !important;
+  max-width: 800px;
   width: 80%;
   list-style-type: none;
   background: white;
   padding: 15px;
-  border: 1px solid #808080;
+  box-shadow: 2px 4px 10px 0px #333;
   border-radius: 10px;
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  line-height: 30px;
-  align-items: center;
+  line-height: 40px;
 }
 
 .done {
