@@ -27,14 +27,22 @@ class App extends Component {
       });
   }
 
+  timeLeftChanged(event) {
+    this.setState({
+        timeLeft: event.target.value,
+      });
+  }
+
   formSubmitted(event) {
     event.preventDefault();
     this.setState({
+      timeLeft: '',
       newTodo: '',
       ethAmount: '',
         todos: [...this.state.todos, {
           title: this.state.newTodo,
           amount: this.state.ethAmount,
+          timeLeft: this.state.timeLeft,
           done: false
         }]
       });
@@ -72,6 +80,8 @@ class App extends Component {
           newTodo={this.state.newTodo}
           ethAmountChanged={this.ethAmountChanged.bind(this)}
           ethAmount={this.state.ethAmount}
+          timeLeftChanged={this.timeLeftChanged.bind(this)}
+          timeLeft={this.state.timeLeft}
         />
 
       <TodoList

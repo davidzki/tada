@@ -19,7 +19,7 @@ const TodoItem = (props) => {
 
       <div>
         <label>Time left</label>
-        <div>01:04:23:30</div>
+        <div>{todo.timeLeft}</div>
       </div>
 
       <div>

@@ -25,12 +25,14 @@ const NewTodoForm = (props) => {
             </div>
 
             <div>
-              <input
-                type="date"
-                />
 
                 <input
-                  type="time"
+                  min="1"
+                  placeholder="Time in hours"
+                  type="number"
+                  id="timeLeft"
+                  onChange={props.timeLeftChanged}
+                  value={props.timeLeft}
                   />
             </div>
 
