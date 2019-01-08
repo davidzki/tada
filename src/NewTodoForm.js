@@ -1,10 +1,11 @@
 import React from 'react'
 
 const NewTodoForm = (props) => {
+
   return (
 
             <form onSubmit={props.formSubmitted}>
-            <div>
+
               <input
                   onChange={props.newTodoChanged}
                   id="newTodo"
@@ -22,19 +23,7 @@ const NewTodoForm = (props) => {
                 step="0.01"
                 placeholder="Amount in ETH"
                 />
-            </div>
 
-            <div>
-
-                <input
-                  min="1"
-                  placeholder="Time in hours"
-                  type="number"
-                  id="timeLeft"
-                  onChange={props.timeLeftChanged}
-                  value={props.timeLeft}
-                  />
-            </div>
 
             <div>
               <button type="submit" className="fas fa-plus-circle"></button>

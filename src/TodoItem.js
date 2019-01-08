@@ -18,11 +18,6 @@ const TodoItem = (props) => {
       </div>
 
       <div>
-        <label>Time left</label>
-        <div>{todo.timeLeft}</div>
-      </div>
-
-      <div>
         <label>Done?</label>
         <div>
         <button onClick={() => props.removeTodo(index)}><i className="fas fa-check-circle"></i></button>

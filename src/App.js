@@ -11,9 +11,11 @@ class App extends Component {
     super();
     this.state = {
       newTodo: '',
-      todos: []
+      todos: [],
+      time: new Date()
     };
   }
+
 
   newTodoChanged(event) {
     this.setState({
@@ -24,12 +26,6 @@ class App extends Component {
   ethAmountChanged(event) {
     this.setState({
         ethAmount: event.target.value,
-      });
-  }
-
-  timeLeftChanged(event) {
-    this.setState({
-        timeLeft: event.target.value,
       });
   }
 
@@ -80,8 +76,6 @@ class App extends Component {
           newTodo={this.state.newTodo}
           ethAmountChanged={this.ethAmountChanged.bind(this)}
           ethAmount={this.state.ethAmount}
-          timeLeftChanged={this.timeLeftChanged.bind(this)}
-          timeLeft={this.state.timeLeft}
         />
 
       <TodoList
