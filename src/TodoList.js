@@ -10,7 +10,6 @@ const TodoList = (props) => {
           key={index}
           index={index}
           todo={todo}
-          toggleTodoDone={props.toggleTodoDone}
           removeTodo={props.removeTodo}
           />)
       })}

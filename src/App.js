@@ -16,7 +16,6 @@ class App extends Component {
     };
   }
 
-
   newTodoChanged(event) {
     this.setState({
         newTodo: event.target.value,
@@ -41,17 +40,6 @@ class App extends Component {
           timeLeft: this.state.timeLeft,
           done: false
         }]
-      });
-  }
-
-  toggleTodoDone(event, index) {
-    const todos = [...this.state.todos]; // copy the array
-    todos[index] = {
-      ...todos[index],
-      done: event.target.checked
-    };
-    this.setState({
-      todos
       });
   }
 
@@ -80,7 +68,6 @@ class App extends Component {
 
       <TodoList
         todos={this.state.todos}
-        toggleTodoDone={this.toggleTodoDone.bind(this)}
         removeTodo={this.removeTodo.bind(this)}
         />
 
